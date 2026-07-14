@@ -1814,3 +1814,11 @@ html, body{
 
 /* Ensure the now-clickable service row media still displays correctly as an anchor */
 a.service-row__media{ display: block; cursor: pointer; }
+
+/* Hide the Insights link everywhere it appears (header nav, mobile fullscreen menu,
+   floating pill nav, and footer) without needing to edit every file individually */
+a[href="insights.html"],
+a[href="index.html#insights"],
+a[href="#insights"] {
+  display: none !important;
+}
