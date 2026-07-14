@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Nikhil, Full Stack Developer</title>
+  <meta name="description" content="Selected projects by Nikhil, a full stack developer — web apps, e-commerce platforms, SaaS tools, and developer APIs.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nikhildev.netlify.app/work.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Work — Nikhil, Full Stack Developer">
+  <meta property="og:description" content="Selected projects by Nikhil, a full stack developer.">
+  <meta property="og:image" content="https://placehold.co/1200x630/C1502E/F6F1E9?text=Nikhil+Work&font=raleway">
+  <meta property="og:url" content="https://nikhildev.netlify.app/work.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav nav--orange" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html#home" class="nav__logo">Nikhil<span class="dot">.</span>dev</a>
+
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <button class="nav__close" id="navClose" aria-label="Close menu">&times;</button>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" class="nav__active">Work</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Floating bottom nav: appears once you scroll past the header -->
+  <div class="floating-nav" id="floatingNav">
+    <a href="index.html#home" aria-label="Go to home">
+      <img src="assets/my-image6.png" alt="Nikhil" class="floating-nav__avatar">
+    </a>
+    <button class="floating-nav__burger" id="floatingNavBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="floating-nav__items" id="floatingNavItems">
+      <a href="index.html#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html" class="floating-nav__active">Work</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+
+
+  <main id="main">
+
+    <!-- ================= WORK HERO ================= -->
+    <section class="about-hero" id="work-hero">
+      <div class="container">
+        <div class="about-hero__top">
+          <span class="about-hero__eyebrow mono">NIKHIL<span>®</span></span>
+          <span class="about-hero__meta mono">©2026 <span>[Scroll to Explore]</span></span>
+        </div>
+        <h1 class="about-hero__title reveal-blur">MY WORK</h1>
+        <p class="work-hero__desc reveal-up">A mix of client work and personal builds across web apps, dashboards, and developer tools — filter by category or scroll through everything below.</p>
+
+        <div class="work-filters reveal-up">
+          <button class="work-filter active" data-filter="all">All</button>
+          <button class="work-filter" data-filter="tools">Dev Tools</button>
+          <button class="work-filter" data-filter="platform">Platform</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK LIST ================= -->
+    <section class="work-list-section" id="portfolio">
+      <div class="container">
+        <div class="work-list">
+
+          <article class="work-row" data-category="tools">
+            <div class="work-row__media reveal-zoom">
+              <img src="https://placehold.co/700x520/C1502E/FFF8F0?text=PDF24X&font=raleway" alt="PDF24X project" loading="lazy">
+            </div>
+            <div class="work-row__body reveal-up">
+              <span class="work-row__num mono">01</span>
+              <h3>PDF24X</h3>
+              <p>A live production platform offering free, browser-based PDF utilities, image converters, developer tools, and publisher tools — all with privacy-first client-side processing, no sign-up required, and an SEO-optimized architecture built to drive organic traffic.</p>
+              <div class="work-row__tags"><span>Client-side Processing</span><span>SEO</span><span>JavaScript</span></div>
+              <a href="https://pdf24x.com" target="_blank" rel="noopener noreferrer" class="work-row__link">Visit pdf24x.com →</a>
+            </div>
+          </article>
+
+          <article class="work-row work-row--reverse" data-category="platform">
+            <div class="work-row__media reveal-zoom">
+              <img src="https://placehold.co/700x520/1A1A1A/8CFFB0?text=LaundryFlow&font=raleway" alt="LaundryFlow project" loading="lazy">
+            </div>
+            <div class="work-row__body reveal-up">
+              <span class="work-row__num mono">02</span>
+              <h3>LaundryFlow</h3>
+              <p>An on-demand laundry and dry cleaning platform built with Next.js — covering pickup booking, live order tracking, per-order and monthly pricing plans, a service catalog, and interactive area-coverage mapping, deployed on Vercel.</p>
+              <div class="work-row__tags"><span>Next.js</span><span>Booking Flow</span><span>Vercel</span></div>
+              <a href="https://laundryflow-six.vercel.app" target="_blank" rel="noopener noreferrer" class="work-row__link">View Live →</a>
+            </div>
+          </article>
+
+          <article class="work-row" data-category="platform">
+            <div class="work-row__media reveal-zoom">
+              <img src="https://placehold.co/700x520/E7DDC9/1A1A1A?text=Nestly&font=raleway" alt="Nestly project" loading="lazy">
+            </div>
+            <div class="work-row__body reveal-up">
+              <span class="work-row__num mono">03</span>
+              <h3>Nestly</h3>
+              <p>A modern, mobile-first platform for discovering unique student housing — built with a clean, responsive interface and property showcases, deployed on Netlify.</p>
+              <div class="work-row__tags"><span>Responsive Design</span><span>Netlify</span></div>
+              <a href="https://6a5284a93adac87b287c3fdd--dashing-caramel-4ae194.netlify.app" target="_blank" rel="noopener noreferrer" class="work-row__link">View Live →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE ME (reused from Home) ================= -->
+    <section class="why" id="why">
+      <div class="container">
+        <span class="why__pill mono reveal-up"><span>✳︎</span> WHY CHOOSE ME</span>
+        <h2 class="why__headline reveal-blur">FOCUSED ON CODE <span class="muted">THAT DELIVERS</span> <span class="muted">RESULTS</span></h2>
+
+        <div class="why__grid">
+          <div class="why-stat why-stat-1 reveal-up">
+            <span class="why-stat__label mono"><span>✳︎</span> YEARS EXPERIENCE</span>
+            <span class="why-stat__num">4+</span>
+            <p>Building modern, reliable software with a focus on performance and usability.</p>
+          </div>
+
+          <div class="why-stat why-stat-2 reveal-up">
+            <span class="why-stat__label mono"><span>✳︎</span> CLIENT SATISFACTION</span>
+            <span class="why-stat__num">97%</span>
+            <p>Focused on delivering results that meet both user needs and business goals.</p>
+          </div>
+
+          <div class="why-testimonial reveal-up">
+            <div class="why-testimonial__avatars">
+              <img src="https://placehold.co/60x60/E7DDC9/1A1A1A?text=A" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/C1502E/FFF8F0?text=B" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/1A1A1A/8CFFB0?text=C" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/E7DDC9/1A1A1A?text=D" alt="" loading="lazy">
+            </div>
+            <p class="why-testimonial__count">40+ Happy Clients Successfully</p>
+            <div class="why-testimonial__stars">★★★★★ <span>4.9/5</span></div>
+            <p class="why-testimonial__quote">"Nikhil delivered an outstanding product that perfectly matched our vision. The attention to detail and user experience was exceptional."</p>
+            <div class="why-testimonial__author">
+              <img src="https://placehold.co/60x60/C1502E/FFF8F0?text=O" alt="Olivia Davis" loading="lazy">
+              <div>
+                <strong>Olivia Davis</strong>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-video reveal-zoom">
+            <video autoplay muted loop playsinline poster="https://placehold.co/700x500/1A1A1A/8CFFB0?text=Loading+Video&font=raleway">
+              <source src="assets/showcase.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="why-feature reveal-up">
+            <span class="why-feature__icon">⚡︎</span>
+            <h4>FAST & RELIABLE</h4>
+            <p>I maintain an efficient workflow that ensures smooth collaboration and clear, timely communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (reused from Home) ================= -->
+  <footer class="footer-new">
+    <div class="container">
+      <div class="footer-new__top">
+        <div class="footer-new__intro">
+          <p>Focused on building clean, reliable software that blends performance, usability, and scale to <strong>help teams ship faster</strong>.</p>
+          <div class="footer-new__contact">
+            <span>+91-7348748803</span>
+            <a href="mailto:hello@nikhildev.com">hello@nikhildev.com</a>
+          </div>
+        </div>
+
+        <form class="footer-new__newsletter" name="newsletter" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter">
+          <h4>Newsletter</h4>
+          <div class="footer-new__newsletter-row">
+            <input type="email" placeholder="jane@example.com" required aria-label="Email address">
+            <button type="submit" aria-label="Subscribe">→︎</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-new__bottom">
+        <div class="footer-new__nav-cols">
+          <div class="footer-new__col">
+            <span class="footer-new__col-label">Navigation</span>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-new__col">
+            <span class="footer-new__col-label">Social</span>
+            <a href="https://github.com/nikhildev" target="_blank" rel="noopener noreferrer">GitHub <span>↗︎</span></a>
+            <a href="https://linkedin.com/in/nikhildev" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗︎</span></a>
+            <a href="https://twitter.com/nikhildev" target="_blank" rel="noopener noreferrer">Twitter <span>↗︎</span></a>
+          </div>
+        </div>
+
+        <div class="footer-new__wordmark">Nikhil<span>®</span></div>
+      </div>
+
+      <div class="footer-new__legal">
+        <p class="mono">© <span id="year"></span> Nikhil. All rights reserved.</p>
+        <div class="footer-new__legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

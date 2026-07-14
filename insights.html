@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights — Nikhil, Full Stack Developer</title>
+  <meta name="description" content="Articles and insights from Nikhil on web development, performance, architecture, and building reliable products.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nikhildev.netlify.app/insights.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Insights — Nikhil, Full Stack Developer">
+  <meta property="og:description" content="Articles and insights on web development, performance, and architecture.">
+  <meta property="og:image" content="https://placehold.co/1200x630/C1502E/F6F1E9?text=Nikhil+Insights&font=raleway">
+  <meta property="og:url" content="https://nikhildev.netlify.app/insights.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav nav--orange" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html#home" class="nav__logo">Nikhil<span class="dot">.</span>dev</a>
+
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <button class="nav__close" id="navClose" aria-label="Close menu">&times;</button>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="insights.html" class="nav__active">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Floating bottom nav: appears once you scroll past the header -->
+  <div class="floating-nav" id="floatingNav">
+    <a href="index.html#home" aria-label="Go to home">
+      <img src="assets/my-image6.png" alt="Nikhil" class="floating-nav__avatar">
+    </a>
+    <button class="floating-nav__burger" id="floatingNavBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="floating-nav__items" id="floatingNavItems">
+      <a href="index.html#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="insights.html" class="floating-nav__active">Insights</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+
+
+  <main id="main">
+
+    <!-- ================= INSIGHTS HERO ================= -->
+    <section class="about-hero" id="insights-hero">
+      <div class="container">
+        <div class="about-hero__top">
+          <span class="about-hero__eyebrow mono">NIKHIL<span>®</span></span>
+          <span class="about-hero__meta mono">©2026 <span>[Scroll to Explore]</span></span>
+        </div>
+        <h1 class="about-hero__title reveal-blur">THE BLOG</h1>
+        <p class="work-hero__desc reveal-up">Notes on web development, performance, architecture, and building products that hold up in production — filter by topic or browse everything below.</p>
+
+        <div class="work-filters reveal-up">
+          <button class="work-filter active" data-filter="all">All</button>
+          <button class="work-filter" data-filter="engineering">Engineering</button>
+          <button class="work-filter" data-filter="architecture">Architecture</button>
+          <button class="work-filter" data-filter="devops">DevOps</button>
+          <button class="work-filter" data-filter="product">Product</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BLOG GRID ================= -->
+    <section class="blog-grid-section" id="blog">
+      <div class="container">
+        <div class="blog-grid">
+
+          <a href="#" class="blog-card reveal-up" data-category="engineering">
+            <img src="https://placehold.co/500x360/E7DDC9/1A1A1A?text=Load+Speed&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">Engineering</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Nov 23, 2024</span>
+              <h3>Why First Load Speed Makes or Breaks Retention</h3>
+              <p>How the first few seconds of load time shape a user's entire impression of your product.</p>
+            </div>
+          </a>
+
+          <a href="#" class="blog-card reveal-up" data-category="architecture">
+            <img src="https://placehold.co/500x360/1A1A1A/8CFFB0?text=Caching&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">Architecture</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Jun 23, 2025</span>
+              <h3>How Caching Shapes Perceived Performance</h3>
+              <p>A practical look at where caching helps most, and where it quietly causes bugs.</p>
+            </div>
+          </a>
+
+          <a href="#" class="blog-card reveal-up" data-category="devops">
+            <img src="https://placehold.co/500x360/C1502E/FFF8F0?text=CI%2FCD&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">DevOps</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Jul 23, 2025</span>
+              <h3>Why CI/CD Pipelines Matter More Than You Think</h3>
+              <p>Small automation investments that pay off every single deploy.</p>
+            </div>
+          </a>
+
+          <a href="#" class="blog-card reveal-up" data-category="product">
+            <img src="https://placehold.co/500x360/E8C468/1A1A1A?text=Scope&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">Product</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Aug 4, 2025</span>
+              <h3>Saying No: Keeping Scope Honest on Client Projects</h3>
+              <p>How clear scope conversations save both timelines and relationships.</p>
+            </div>
+          </a>
+
+          <a href="#" class="blog-card reveal-up" data-category="engineering">
+            <img src="https://placehold.co/500x360/1A1A1A/C1502E?text=TypeScript&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">Engineering</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Sep 12, 2025</span>
+              <h3>TypeScript Patterns That Actually Save Time</h3>
+              <p>The handful of type patterns worth learning versus the ones that just add noise.</p>
+            </div>
+          </a>
+
+          <a href="#" class="blog-card reveal-up" data-category="architecture">
+            <img src="https://placehold.co/500x360/E7DDC9/1A1A1A?text=API+Design&font=raleway" alt="" loading="lazy">
+            <span class="blog-card__tag">Architecture</span>
+            <div class="blog-card__body">
+              <span class="blog-card__date">Oct 2, 2025</span>
+              <h3>Designing APIs People Actually Enjoy Using</h3>
+              <p>Small conventions that make an API feel obvious instead of frustrating.</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE ME (reused from Home) ================= -->
+    <section class="why" id="why">
+      <div class="container">
+        <span class="why__pill mono reveal-up"><span>✳︎</span> WHY CHOOSE ME</span>
+        <h2 class="why__headline reveal-blur">FOCUSED ON CODE <span class="muted">THAT DELIVERS</span> <span class="muted">RESULTS</span></h2>
+
+        <div class="why__grid">
+          <div class="why-stat why-stat-1 reveal-up">
+            <span class="why-stat__label mono"><span>✳︎</span> YEARS EXPERIENCE</span>
+            <span class="why-stat__num">4+</span>
+            <p>Building modern, reliable software with a focus on performance and usability.</p>
+          </div>
+
+          <div class="why-stat why-stat-2 reveal-up">
+            <span class="why-stat__label mono"><span>✳︎</span> CLIENT SATISFACTION</span>
+            <span class="why-stat__num">97%</span>
+            <p>Focused on delivering results that meet both user needs and business goals.</p>
+          </div>
+
+          <div class="why-testimonial reveal-up">
+            <div class="why-testimonial__avatars">
+              <img src="https://placehold.co/60x60/E7DDC9/1A1A1A?text=A" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/C1502E/FFF8F0?text=B" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/1A1A1A/8CFFB0?text=C" alt="" loading="lazy">
+              <img src="https://placehold.co/60x60/E7DDC9/1A1A1A?text=D" alt="" loading="lazy">
+            </div>
+            <p class="why-testimonial__count">40+ Happy Clients Successfully</p>
+            <div class="why-testimonial__stars">★★★★★ <span>4.9/5</span></div>
+            <p class="why-testimonial__quote">"Nikhil delivered an outstanding product that perfectly matched our vision. The attention to detail and user experience was exceptional."</p>
+            <div class="why-testimonial__author">
+              <img src="https://placehold.co/60x60/C1502E/FFF8F0?text=O" alt="Olivia Davis" loading="lazy">
+              <div>
+                <strong>Olivia Davis</strong>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-video reveal-zoom">
+            <video autoplay muted loop playsinline poster="https://placehold.co/700x500/1A1A1A/8CFFB0?text=Loading+Video&font=raleway">
+              <source src="assets/showcase.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="why-feature reveal-up">
+            <span class="why-feature__icon">⚡︎</span>
+            <h4>FAST & RELIABLE</h4>
+            <p>I maintain an efficient workflow that ensures smooth collaboration and clear, timely communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (reused from Home) ================= -->
+  <footer class="footer-new">
+    <div class="container">
+      <div class="footer-new__top">
+        <div class="footer-new__intro">
+          <p>Focused on building clean, reliable software that blends performance, usability, and scale to <strong>help teams ship faster</strong>.</p>
+          <div class="footer-new__contact">
+            <span>+91-7348748803</span>
+            <a href="mailto:hello@nikhildev.com">hello@nikhildev.com</a>
+          </div>
+        </div>
+
+        <form class="footer-new__newsletter" name="newsletter" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter">
+          <h4>Newsletter</h4>
+          <div class="footer-new__newsletter-row">
+            <input type="email" placeholder="jane@example.com" required aria-label="Email address">
+            <button type="submit" aria-label="Subscribe">→︎</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-new__bottom">
+        <div class="footer-new__nav-cols">
+          <div class="footer-new__col">
+            <span class="footer-new__col-label">Navigation</span>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-new__col">
+            <span class="footer-new__col-label">Social</span>
+            <a href="https://github.com/nikhildev" target="_blank" rel="noopener noreferrer">GitHub <span>↗︎</span></a>
+            <a href="https://linkedin.com/in/nikhildev" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗︎</span></a>
+            <a href="https://twitter.com/nikhildev" target="_blank" rel="noopener noreferrer">Twitter <span>↗︎</span></a>
+          </div>
+        </div>
+
+        <div class="footer-new__wordmark">Nikhil<span>®</span></div>
+      </div>
+
+      <div class="footer-new__legal">
+        <p class="mono">© <span id="year"></span> Nikhil. All rights reserved.</p>
+        <div class="footer-new__legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
